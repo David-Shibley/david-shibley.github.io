@@ -1,0 +1,36 @@
+.brand {
+  width: 200px;
+  height: auto;
+  position: relative;
+}
+
+.article_box {
+  height: 400px;
+  width: auto;
+}
+
+.glyphicon {
+  background-color: white;
+}
+
+.glyphicon-remove {
+  color: red;
+}
+
+.favorites {
+  background-color: grey;
+  color: gold;
+}
+
+.favorites_title {
+  text-indent: 10px;
+}
+
+.favorites_page {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+/*.jumbotron {
+  position: absolute;
+}*/

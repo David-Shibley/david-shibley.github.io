@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My first web app</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <script id="post_template" type="text/handlebars">
+    <section class="col-sm-4 col-lg-3">
+      <article class="article_box">
+        <figure class="thumbnail">
+          <a href="http://www.reddit.com/{{permalink}}">
+          <img src="{{thumbnail}}" alt="">
+          <figcaption class="caption">
+            <h4>{{title}}</h4>
+            </a>
+            <a href="http://www.reddit.com/user/{{author}}">
+              <p>{{author}}</p>
+            </a>
+            <div class="btn-group" role="group" aria-label="">
+              <button class="glyphicon glyphicon-star"></button>
+              <button class="glyphicon glyphicon-remove"></button>
+            </div>
+          </figcaption>
+        </figure>
+      </article>
+    </section>
+    </script>
+    <div class="container">
+      <header class="page-header">
+        <div class="row">
+            <a href="#"><img class="brand" alt="Brand" src="logo.png"></a>
+        </div>
+      </header>
+      <main>
+        <div class="jumbotron">
+            <h1>Search a subreddit</h1>
+            <input type="form" name="input-form" autofocus="autofocus">
+            <button class="special_social" type="button" name="button">Button</button>
+        </div>
+        <div class="panel">
+          <div class="panel-default">
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-9">
+            <div id="postbox">
+              <!-- <article class="article_box">
+                <figure class="thumbnail">
+                  <a href="http://www.reddit.com/{{permalink}}">
+                  <img src="{{thumbnail}}" alt="">
+                  <figcaption class="caption">
+                    <h4>{{title}}</h4>
+                    </a>
+                    <a href="http://www.reddit.com/user/{{author}}">
+                      <p>{{author}}</p>
+                    </a>
+                    <div class="btn-group" role="group" aria-label="">
+                      <button class="glyphicon glyphicon-star favorites"></button>
+                      <button class="glyphicon glyphicon-remove"></button>
+                    </div>
+                  </figcaption>
+                </figure>
+              </article> -->
+            </div>
+          </div>
+          <aside class="col-sm-3">
+            <div class="row favorites_page">
+              <div class="favorites_title">
+                <h2>favorites</h2>
+              </div>
+              <div class="favorites_container">
+
+              </div>
+            </div>
+          </aside>
+        </div>
+      </main>
+      <footer>
+
+      </footer>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
