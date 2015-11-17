@@ -1,0 +1,41 @@
+main {
+  width: 800px;
+  height: 90vh;
+  margin: 10px;
+}
+
+.main {
+  background-image: url("http://i.imgur.com/4rwv5Wv.jpg");
+  background-color: red;
+  height: 430px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.input-form {
+  height: 30px;
+}
+
+@media (max-width: 800px) {
+  main {
+    width: auto;
+  }
+  .input-form {
+    transform: translate(0px, -520px);
+  }
+  .main {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main {
+    background-color: blue;
+  }
+}
+
+@media (min-width: 800px) {
+  div.main {
+    margin: 0 auto;
+  }
+}
